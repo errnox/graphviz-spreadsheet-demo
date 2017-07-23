@@ -1,0 +1,19 @@
+digraph "graph" {
+	node [shape=box]
+			Supplier -> "Assembly Lane"
+			"Production Facility" -> "Assembly Lane"
+			"Assembly Lane" -> Supplier
+			"Control Room" -> "Control Room"
+			Management -> Management
+			"Control Room" -> Management
+			Management -> "Production Facility"
+			Competitor -> "Production Facility"
+			Competitor -> Management
+			Competitor -> "Control Room"
+			Competitor -> "Assembly Lane"
+			"Production Facility" -> Competitor
+			Management -> Competitor
+			"Control Room" -> Competitor
+			"Assembly Lane" -> Competitor
+			Supplier -> "Production Facility"
+}
